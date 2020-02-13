@@ -1,0 +1,56 @@
+{
+    "name": "Customer",
+    "fields": [
+        {
+            "fieldName": "title",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "createDate",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "userId",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "customerType",
+            "fieldType": "CustomerType",
+            "fieldValues": "TRIAL,FREE,PAYED"
+        },
+        {
+            "fieldName": "status",
+            "fieldType": "CustomerStatus",
+            "fieldValues": "ACTIVE,EXPIRED,DISABLED"
+        },
+        {
+            "fieldName": "isDeleted",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "description",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "paymentConfig",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "notificationConfig",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20200213215300",
+    "entityTableName": "customer",
+    "dto": "mapstruct",
+    "pagination": "infinite-scroll",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "CustomerHolder",
+    "applications": "*",
+    "microserviceName": "CustomerHolder",
+    "angularJSSuffix": "egh"
+}
